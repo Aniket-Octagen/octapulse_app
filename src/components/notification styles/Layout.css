@@ -1,0 +1,45 @@
+/* Removed desktop-fixed sidebar styles to enforce mobile-only */
+
+/* Mobile defaults unwrapped */
+#settings-content {
+  padding: 1rem;
+}
+
+.scroll-mt-24 {
+  scroll-margin-top: 5rem; /* Adjust for sticky nav on small screens */
+}
+
+.profile-label {
+  font-size: 0.875rem;
+}
+
+.profile-value {
+  font-size: 1rem;
+}
+
+/* Base sidebar styling */
+.sidebar {
+  background-color: white;
+  min-height: 100vh;
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar title */
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #141414;
+}
+
+/* Sidebar links */
+.sidebar-links li a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #141414;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-links li a:hover {
+  color: #478560;
+}

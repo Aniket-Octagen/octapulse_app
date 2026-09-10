@@ -1,0 +1,178 @@
+.all-deviations-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.deviations-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.deviations-empty {
+  text-align: center;
+  font-size: 18px;
+  color: #64748b;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.deviations-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.deviations-table th,
+.deviations-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.deviations-table th {
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.deviations-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Mobile defaults unwrapped */
+.deviations-table {
+  font-size: 14px;
+}
+
+.deviations-table th,
+.deviations-table td {
+  padding: 8px;
+}
+
+.deviations-title {
+  font-size: 20px;
+}
+
+.deviations-empty {
+  font-size: 16px;
+}
+
+.sheet-selector {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sheet-selector label {
+  font-weight: bold;
+}
+
+.sheet-selector select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.action-buttons {
+  margin-top: 8px;
+}
+
+.action-buttons button {
+  margin-right: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.decline-reason {
+  margin-top: 6px;
+}
+
+.decline-reason input {
+  width: 80%;
+  margin-right: 4px;
+}
+
+/* Buttons */
+.btn-approve,
+.btn-decline,
+.btn-submit-decline {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-approve {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #45a049;
+}
+
+.btn-decline {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-decline:hover {
+  background-color: #d32f2f;
+}
+
+.btn-submit-decline {
+  background-color: #1976d2;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn-submit-decline:hover {
+  background-color: #115293;
+}
+
+/* Decline reason input */
+.decline-reason {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.decline-reason input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+/* Status badges */
+.status-approved {
+  color: white;
+  background-color: #4caf50;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.status-declined {
+  color: white;
+  background-color: #f44336;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Table adjustments for better button spacing */
+.deviations-table td > button {
+  min-width: 70px;
+}

@@ -1,0 +1,6 @@
+/node_modules
+android/key.properties
+*.jks
+
+/android
+/dist

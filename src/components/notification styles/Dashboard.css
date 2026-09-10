@@ -1,0 +1,213 @@
+.dashboard-container {
+  padding: 20px;
+  background: #fff;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+.dashboard-title {
+  margin-bottom: 16px;
+  color: #478560;
+}
+
+.dashboard-controls input.dashboard-search {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.truncate-text {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edit-reason-input {
+  width: 180px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-submit {
+  padding: 6px 12px;
+  background-color: #388e3c;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #2c6f29;
+}
+
+
+/* Responsive Design */
+
+/* Removed desktop/tablet rules to enforce mobile-only */
+
+/* Mobile-only defaults unwrapped */
+  .dashboard-container {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .dashboard-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .dashboard-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .dashboard-search {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .dashboard-sort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dashboard-sort select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sheet-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .sheet-filter label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .sheet-filter select {
+    width: 100%;
+  }
+
+  .dashboard-table th,
+  .dashboard-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .truncate-text {
+    max-width: 150px;
+  }
+
+  .submit-all-button-container {
+    text-align: center;
+  }
+
+  .submit-all-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .sheet-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .sheet-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* === Table/Card Responsive Toggle === */
+
+/* Default: mobile-only view — hide table, show cards */
+.deviations-table {
+  display: none;
+/* End of unwrapped mobile defaults */
+
+.deviations-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Always apply mobile card styles */
+.deviations-table,
+.deviations-table thead,
+.deviations-table tbody,
+.deviations-table tr,
+.deviations-table th,
+.deviations-table td {
+  display: none;
+}
+
+.deviations-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.deviation-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.deviation-card div {
+  margin-bottom: 8px;
+}
+
+.deviation-card label {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #478560;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.deviation-card select,
+.deviation-card input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+/* Removed redundant mobile-only media wrapper */
+

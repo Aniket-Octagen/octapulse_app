@@ -1,0 +1,32 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 203px;
+  color: white;
+  padding: 20px;
+  height: 95vh;
+  flex-shrink: 0;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+.navbar {
+  color: white;
+  padding: 15px 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
